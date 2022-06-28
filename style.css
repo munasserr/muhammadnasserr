@@ -337,11 +337,15 @@ h5{
 
 .projects-title a{
     text-decoration: none;
-    transition: 0.7s;
+    border-bottom: 0.1px solid var(--lightcolor);
+    padding-bottom: 0.3px;
+    color: var(--primarycolor);
+    transition: 0.7s ease;
 }
 
 .projects-title a:hover{
-    color: #ff274b;
+    color: var(--lightcolor);
+    border-bottom: none;
 }
 
 footer {
