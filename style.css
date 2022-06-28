@@ -281,6 +281,69 @@ h5{
     letter-spacing: 0.8rem;
 }
 
+.projects{
+    background-color: var(--bgcolor1);
+    padding: var(--padding);
+}
+
+.projects h1{
+    font-size: 4.50rem;
+    margin: 0;
+}
+
+.projects .container-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.projects-card{
+    background-color: var(--bgcolor2);
+    border: 2px solid var(--lightcolor);
+    border-radius: 15px;
+    height: 16em;
+    width: 23em;
+    overflow: hidden;
+    margin: 25px;
+    transition: 0.7s;
+}
+
+.projects-card:hover{
+    transform: scale(1.1);
+}
+
+.projects-img{
+    width: 100%;
+}
+
+.projects-img img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.projects-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+
+.projects-title{
+    display: flex;
+    justify-content: flex-start;
+    gap: 11rem;
+}
+
+.projects-title a{
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.projects-title a:hover{
+    color: #ff274b;
+}
+
 footer {
     background-color: var(--bgcolor1);
     padding: var(--padding);
