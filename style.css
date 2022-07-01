@@ -1,6 +1,5 @@
 :root{
     --primarycolor: #ff274b;
-    --secondarycolor: #f7bcf7;
     --lightcolor: #ffffff;
     --bgcolor1: #171a1c;
     --bgcolor2:#22282a;
@@ -121,12 +120,13 @@ h4{
 .social img:hover{
     transform :scale(1.5,1.5);
 }
+
 .home .imgss{
     position: relative;
-    width: 45%;
+    width: 47%;
     height: 90%;
     align-self: flex-end;
-
+    overflow:hidden;
 }
 .home .imgss img {
     position: absolute;
@@ -281,6 +281,37 @@ h5{
     letter-spacing: 0.8rem;
 }
 
+footer {
+    background-color: var(--bgcolor2);
+    padding: var(--padding);
+}
+
+footer .container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    color: var(--lightcolor);
+    text-align: center;
+}
+footer .end{
+    color: var(--primarycolor);
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.skills-images img:hover{
+    transform:scale(1.25,1.25);
+}
+
 .projects{
     background-color: var(--bgcolor1);
     padding: var(--padding);
@@ -310,6 +341,17 @@ h5{
     transition: 0.7s;
 }
 
+.projects-card span{
+    transition: 0.4s ease;
+}
+
+.projects-card:hover span{
+    transform: scaleX(1.2);
+    padding-left: 1.25%;
+}
+
+
+
 .projects-card:hover{
     transform: scale(1.1);
 }
@@ -320,13 +362,12 @@ h5{
 
 .projects-img img{
     width: 100%;
-    margin-bottom: 12px;
 }
 
 .projects-info{
     display: flex;
     flex-direction: column;
-    padding-left: 3%;
+    margin-left: 3%;
 }
 
 .projects-title{
@@ -343,38 +384,13 @@ h5{
     transition: 0.7s ease;
 }
 
+.projects-card:hover a{
+    transform: scale(1.150);
+    color :white;
+    border-color: var(--primarycolor);
+}
+
 .projects-title a:hover{
-    color: var(--lightcolor);
-    border-bottom: none;
-}
-
-footer {
-    background-color: var(--bgcolor1);
-    padding: var(--padding);
-}
-
-footer .container-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-footer p {
-    color: var(--lightcolor);
-    text-align: center;
-}
-footer .end{
     color: var(--primarycolor);
-    text-align: center;
-    margin-top: 0.3rem;
-}
-
-.skills-images img:hover{
-    transform:scale(1.25,1.25);
+    border-bottom: none;
 }
