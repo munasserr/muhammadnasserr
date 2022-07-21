@@ -1,0 +1,29 @@
+:root{
+    --primarycolor: #ff274b;
+    --lightcolor: #ffffff;
+    --bgcolor1: #171a1c;
+    --bgcolor2:#22282a;
+    --padding:8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgcolor1);
+}
+
+.vid-container{
+    width: 720px;
+    position: relative;
+    left: 28%;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+}
+
+.vid-container video{
+    width: 100%     ;
+}
